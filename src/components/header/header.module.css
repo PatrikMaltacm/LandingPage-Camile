@@ -1,43 +1,87 @@
-.header{
-    width: 100%;
-    background-color: #570102;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: row;
-    justify-content: space-between;
-    padding: 0 75px;
-    position: fixed;
-    z-index: 9999;
+/* Estilos globais para o header */
+.header {
+  width: 100%;
+  background-color: #570102;
+  display: flex;
+  align-items: center;
+  justify-content: space-between; /* Mantém o espaço entre os itens */
+  padding: 0 75px;
+  position: fixed;
+  z-index: 9999;
+  height: 80px; /* Define uma altura fixa para o header */
 }
-
-
-.img{
-    width: 100px;
-    height: 100px;
+  
+  /* Estilos para a imagem */
+  .img {
+    width: 70px;
+    height: 70px;
     background-color: transparent;
-    
-}
-
-nav{
-    width: 720px;
-    height: 34px;
+  }
+  
+  /* Estilos para o menu de navegação */
+  nav {
     display: flex;
     justify-content: space-between;
     background-color: #570102;
-}
-
-nav a {
+    gap: 20px; /* Espaçamento entre os links */
+  }
+  
+  nav a {
     background-color: transparent;
     text-decoration: none;
-    color: #F9F9F9;
-    width: 94px;
-    height: 24px;
+    color: #f9f9f9;
     font-size: 19px;
-    transform: all 0.5s;
-}
-
-a:hover{
+    transition: all 0.5s; /* Correção: transition em vez de transform */
+  }
+  
+  nav a:hover {
     cursor: pointer;
-    transform: all 0.5s;
-}
+    opacity: 0.8; /* Efeito de hover simples */
+  }
+  
+  /* Media queries para responsividade */
+  
+  /* Telas menores (tablets e celulares) */
+  @media (max-width: 768px) {
+    .header {
+      flex-direction: column;
+      align-items: center;
+      padding: 20px; /* Reduz o padding para telas menores */
+      height: auto; /* Altura automática para se ajustar ao conteúdo */
+    }
+  
+    nav {
+      flex-direction: row;
+      align-items: center;
+      gap: 10px; /* Espaçamento menor entre os links */
+      width: 100%; /* Ocupa toda a largura */
+    }
+    .img {
+      width: 0px; /* Reduz o tamanho da imagem */
+      height: 0px;
+      visibility: hidden;
+    }
+  
+    nav a {
+      width: 100%; /* Links ocupam toda a largura */
+      text-align: center; /* Centraliza o texto */
+      padding: 10px 0; /* Adiciona padding para melhorar a área de clique */
+    }
+  }
+  
+  /* Telas muito pequenas (celulares) */
+  @media (max-width: 480px) {
+    .header {
+      padding: 10px; /* Padding ainda menor para celulares */
+    }
+  
+    .img {
+      width: 0px; /* Reduz o tamanho da imagem */
+      height: 0px;
+      visibility: hidden;
+    }
+  
+    nav a {
+      font-size: 16px; /* Reduz o tamanho da fonte */
+    }
+  }

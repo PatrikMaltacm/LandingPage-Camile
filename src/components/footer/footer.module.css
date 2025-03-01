@@ -1,28 +1,69 @@
-.footer{
-    height: 82px;
+/* Estilos globais para o footer */
+.footer {
     width: 100%;
+    height: 82px;
     display: flex;
     justify-content: center;
     align-items: center;
-    flex-direction: row;
-    background-color: #57423D;
-
-}
-
-.footer .p {
+    background-color: #57423d;
+    padding: 0 20px; /* Adiciona padding para evitar que o conteúdo encoste nas bordas */
+  }
+  
+  .footer .p {
     background-color: transparent;
-}
-
-.footer .a {
+    color: #f9f9f9; /* Adiciona cor ao texto */
+    font-size: 16px; /* Tamanho da fonte */
+    margin: 0; /* Remove margens padrão */
+  }
+  
+  .footer .a {
     margin-left: 10px;
     background-color: transparent;
     display: flex;
     justify-content: center;
     align-items: center;
-}
-
-.footer .a img{
+  }
+  
+  .footer .a img {
     width: 30px;
     height: 30px;
     background-color: transparent;
-}
+    transition: opacity 0.3s; /* Adiciona transição suave ao ícone */
+  }
+  
+  .footer .a img:hover {
+    opacity: 0.8; /* Efeito de hover no ícone */
+  }
+  
+  /* Media queries para responsividade */
+  
+  /* Telas menores (tablets e celulares) */
+  @media (max-width: 768px) {
+    .footer {
+      flex-direction: column; /* Altera a direção para coluna */
+      height: auto; /* Altura automática para se ajustar ao conteúdo */
+      padding: 20px 10px; /* Ajusta o padding */
+    }
+  
+    .footer .p {
+      font-size: 14px; /* Reduz o tamanho da fonte */
+      text-align: center; /* Centraliza o texto */
+      margin-bottom: 10px; /* Adiciona espaçamento abaixo do texto */
+    }
+  
+    .footer .a {
+      margin-left: 0; /* Remove a margem à esquerda */
+    }
+  }
+  
+  /* Telas muito pequenas (celulares) */
+  @media (max-width: 480px) {
+    .footer .p {
+      font-size: 12px; /* Reduz ainda mais o tamanho da fonte */
+    }
+  
+    .footer .a img {
+      width: 25px; /* Reduz o tamanho do ícone */
+      height: 25px;
+    }
+  }

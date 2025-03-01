@@ -1,16 +1,16 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
 
-*{
+* {
   margin: 0;
   padding: 0;
-  font-family: Open Sans;
+  font-family: 'Open Sans', sans-serif;
   box-sizing: border-box;
-  background-color: #F9F9F9;
+  background-color: #f9f9f9;
 }
 
 .floating{
   position: fixed; 
-            bottom: 80px;
+            bottom: 50px;
             right: 35px; 
             background-color: transparent; 
             color: white;
@@ -34,157 +34,184 @@
   transform: scale(1.1);
 }
 
-.hero{
+
+/* Hero Section */
+.hero {
   background-color: #570102;
   width: 100%;
-  height: 1280px;
+  height: 100vh;
   display: flex;
   align-items: center;
   justify-content: end;
+  padding: 20px;
+  padding-top: 10px; /* Compensa a altura do header */
 }
 
-.hero .group{
+.hero .group {
   background-color: transparent;
-  width: 775px;
-  height: 321px;
+  width: 100%;
+  max-width: 720px;
+  height: auto;
   display: flex;
   align-items: center;
   justify-content: center;
   flex-direction: column;
   gap: 25px;
-  color: #F9F9F9;
+  color: #f9f9f9;
+  text-align: center;
 }
 
-.hero .group h1{
+.hero .group h1 {
   background-color: transparent;
   font-weight: bold;
-  font-size: 96px;
-}
-
-.hero .group h2{
-  background-color: transparent;
   font-size: 48px;
 }
 
-.hero .group a{
-  width: 341px;
-  height: 94px;
-  text-decoration: none;
-  background-color: #D2BEA4;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  color: #F9F9F9;
-  text-align: center;
-  border-radius: 8px;
-}
-
-.about{
-  width: 100%;
-  height: 1280px;
-  display: flex;
-  align-items: center;
-  justify-content: space-around;
-  background-color: #F9F9F9;
-  padding: 105px;
-  gap: 48px;
-}
-
-.about img{
-  width: 494px;
-  height: 443px;
-  border-radius: 8px;
-}
-
-.about .content-about{
-  width: 573px;
-  height: 351px;
-}
-
-.about .content-about h3{
-  font-weight: bold;
-  font-size: 32px;
-  margin-bottom: 15px;
-  color: #57423D;
-}
-
-.about .content-about p{
-  width: 573px;
-  height: 288px;
-  color: #495057;
+.hero .group h2 {
+  background-color: transparent;
   font-size: 24px;
 }
 
-.specialties{
+.hero .group a {
   width: 100%;
-  height: 1280px;
-  background-color: #F2F2F2;
+  max-width: 341px;
+  height: 60px;
+  text-decoration: none;
+  background-color: #d2bea4;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #f9f9f9;
+  text-align: center;
+  border-radius: 8px;
+  font-size: 18px;
+}
+
+/* About Section */
+.about {
+  width: 100%;
+  height: auto; /* Altura automática para se ajustar ao conteúdo */
+  display: flex;
+  flex-direction: row; /* Altera para coluna em telas menores */
+  align-items: center;
+  justify-content: center;
+  background-color: #f9f9f9;
+  padding: 150px 20px; /* Reduz o padding */
+  gap: 20px; /* Reduz o espaçamento */
+}
+
+.about img {
+  width: 100%;
+  max-width: 300px; /* Reduz o tamanho da imagem */
+  height: auto;
+  border-radius: 8px;
+  margin-right: 15px;
+}
+
+.about .content-about {
   display: flex;
   align-items: center;
   justify-content: center;
   flex-direction: column;
+  width: 100%;
+  max-width: 510px; /* Limita a largura máxima */
+  height: auto;
+  text-align: center; /* Centraliza o texto */
 }
 
-.specialties h3{
+.about .content-about h3 {
   font-weight: bold;
-  font-size: 48px;
-  color: #57423D;
-  background-color: transparent;
+  font-size: 24px; /* Reduz o tamanho da fonte */
+  margin-bottom: 10px; /* Reduz o espaçamento */
+  color: #57423d;
 }
 
-.specialties ul{
+.about .content-about p {
+  text-align: start;
+  width: 100%;
+  height: auto;
+  color: #495057;
+  font-size: 16px; /* Reduz o tamanho da fonte */
+}
+
+/* Specialties Section */
+.specialties {
+  width: 100%;
+  height: auto; /* Altura automática para se ajustar ao conteúdo */
+  background-color: #f2f2f2;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding: 200px 20px; /* Adiciona padding */
+}
+
+.specialties h3 {
+  font-weight: bold;
+  font-size: 32px; /* Reduz o tamanho da fonte */
+  color: #57423d;
+  background-color: transparent;
+  margin-bottom: 20px; /* Adiciona espaçamento */
+}
+
+.specialties ul {
   display: flex;
   align-items: center;
   justify-content: center;
   flex-direction: column;
   border-radius: 14px;
-  width: 90%;
-  height: 480px;
+  width: 100%;
+  max-width: 1024px; /* Limita a largura máxima */
+  height: auto;
   list-style: none;
+  padding: 80px 0px; /* Remove o padding padrão */
 }
 
-.specialties ul li{
-  padding: 14px 0;
-  font-size: 24px;
+.specialties ul li {
+  padding: 10px 0; /* Reduz o espaçamento */
+  font-size: 18px; /* Reduz o tamanho da fonte */
   font-weight: bold;
   color: #424242;
 }
 
-.time{
+/* Time Section */
+.time {
   width: 100%;
-  height: 1280px;
-  background-color: #F2F2F2;
+  height: auto; /* Altura automática para se ajustar ao conteúdo */
+  background-color: #f2f2f2;
   display: flex;
   align-items: center;
   justify-content: center;
   flex-direction: column;
+  padding: 200px 20px; /* Adiciona padding */
 }
 
-.time .advs{
+.time .advs {
   display: flex;
-  flex-direction: row;
+  flex-direction: row; /* Altera para coluna em telas menores */
   align-items: center;
   justify-content: center;
-  gap: 64px;
+  gap: 50px; /* Reduz o espaçamento */
   background-color: transparent;
 }
 
-.time h3{
+.time h3 {
   font-weight: bold;
-  font-size: 48px;
-  color: #57423D;
-  margin-bottom: 28px;
+  font-size: 32px; /* Reduz o tamanho da fonte */
+  color: #57423d;
+  margin-bottom: 20px; /* Rediciona espaçamento */
   background-color: transparent;
 }
 
-.time .adv{
-  width: 301px;
-  height: 551px;
+.time .adv {
+  width: 100%;
+  max-width: 300px; /* Limita a largura máxima */
+  height: auto;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  gap: 14px;
+  gap: 20px; /* Reduz o espaçamento */
   border-radius: 14px;
   transition: all 0.5s;
 }
@@ -194,21 +221,117 @@
   transition: all 0.5s;
 }
 
-.time .adv img{
+.time .adv img {
   width: 250px;
-  height: 250px;
+  max-width: 200px; /* Reduz o tamanho da imagem */
+  height: auto;
   border-radius: 8px;
 }
 
-.time .adv h4{
+.time .adv h4 {
   color: #570102;
   font-weight: bold;
-  font-size: 32px;
+  font-size: 24px; /* Reduz o tamanho da fonte */
 }
 
-.time .adv p{
+.time .adv p {
   width: 100%;
   text-align: center;
   color: #495057;
-  font-size: 20px;
+  font-size: 16px; /* Reduz o tamanho da fonte */
+}
+
+/* Media Queries para telas menores */
+@media (max-width: 768px) {
+  .floating{
+    bottom: 30px;
+    right: 5px; 
+    background-color: transparent; 
+  }
+  .floating img{
+    background-color: transparent; 
+    width: 45px;
+    height: 45px;
+  }
+  .hero .group h1 {
+    font-size: 36px; /* Ajusta o tamanho da fonte para telas menores */
+  }
+
+  .hero .group h2 {
+    font-size: 20px; /* Ajusta o tamanho da fonte para telas menores */
+  }
+
+  .hero .group a {
+    height: 50px; /* Reduz a altura */
+    font-size: 16px; /* Reduz o tamanho da fonte */
+  }
+
+  .about {
+    text-align: center;
+    padding: 120px 20px; /* Reduz o padding */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
+
+
+  .about img {
+    max-width: 200px; /* Reduz o tamanho da imagem */
+  }
+
+  .about .content-about h3 {
+    font-size: 20px; /* Reduz o tamanho da fonte */
+  }
+
+  .about .content-about p {
+    font-size: 14px; /* Reduz o tamanho da fonte */
+  }
+
+  .specialties{
+    padding: 180px 20px;
+  }
+
+  .specialties h3 {
+    font-size: 28px; /* Reduz o tamanho da fonte */
+  }
+
+  .specialties ul li {
+    font-size: 16px; /* Reduz o tamanho da fonte */
+  }
+
+
+  .time{
+    padding: 150px;
+  }
+
+  .time h3 {
+    font-size: 28px; /* Reduz o tamanho da fonte */
+  }
+
+  .time{
+    width: 100%;
+  }
+
+  .time .adv{
+    width: 100%;
+    padding: 24px 50px;
+  }
+
+  .time .advs{
+    display: flex;
+    flex-direction: column;
+  }
+
+  .time adv img{
+    width: 100%;
+  }
+
+  .time .adv h4 {
+    font-size: 20px; /* Reduz o tamanho da fonte */
+  }
+
+  .time .adv p {
+    font-size: 14px; /* Reduz o tamanho da fonte */
+  }
 }

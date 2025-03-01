@@ -15,7 +15,7 @@ function App() {
           <div className="group">
             <h1>Camile Folleto</h1>
             <h2>Escritório de Advocacia</h2>
-            <a target="_blank" href="https://l.instagram.com/?u=https%3A%2F%2Fapi.whatsapp.com%2Fsend%3Fphone%3D5554991657423%26fbclid%3DPAZXh0bgNhZW0CMTEAAaZOJ_RyY3KZlCYGsNdp5_FBZDdPUQFAQi6MloswkKEr2wlaMUaSr_Qk7tU_aem_-L5BZGB9nHLnYH3bbcXwcw&e=AT39a3oMR_66ksPc3CLxZkHmU5BfBdGN6vR87BPhJhPpXKK6208AEtmzMLfsJzRdZRggKi1h7r9WvjXFScv_JqJ-Rp9YaVpj_xfxBSJxm2bA_v1KNrM2U1k">Entre em contato</a>
+            <a target="_blank" href="https://api.whatsapp.com/send?phone=5554991657423&fbclid=PAZXh0bgNhZW0CMTEAAaZOJ_RyY3KZlCYGsNdp5_FBZDdPUQFAQi6MloswkKEr2wlaMUaSr_Qk7tU_aem_-L5BZGB9nHLnYH3bbcXwcw">Entre em contato</a>
           </div>
         </section>
 
@@ -72,7 +72,7 @@ function App() {
           
         </section>
 
-        <a className="floating" target="blank" href="https://l.instagram.com/?u=https%3A%2F%2Fapi.whatsapp.com%2Fsend%3Fphone%3D5554991657423%26fbclid%3DPAZXh0bgNhZW0CMTEAAaZOJ_RyY3KZlCYGsNdp5_FBZDdPUQFAQi6MloswkKEr2wlaMUaSr_Qk7tU_aem_-L5BZGB9nHLnYH3bbcXwcw&e=AT39a3oMR_66ksPc3CLxZkHmU5BfBdGN6vR87BPhJhPpXKK6208AEtmzMLfsJzRdZRggKi1h7r9WvjXFScv_JqJ-Rp9YaVpj_xfxBSJxm2bA_v1KNrM2U1k">
+        <a className="floating" target="blank" href="https://api.whatsapp.com/send?phone=5554991657423&fbclid=PAZXh0bgNhZW0CMTEAAaZOJ_RyY3KZlCYGsNdp5_FBZDdPUQFAQi6MloswkKEr2wlaMUaSr_Qk7tU_aem_-L5BZGB9nHLnYH3bbcXwcw">
           <img src="https://img.icons8.com/?size=100&id=16713&format=png&color=000000" alt="Botão contato" />
         </a>
 
