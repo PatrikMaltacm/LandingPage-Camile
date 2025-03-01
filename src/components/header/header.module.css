@@ -1,4 +1,4 @@
-header{
+.header{
     width: 100%;
     background-color: #570102;
     display: flex;
@@ -11,7 +11,7 @@ header{
 }
 
 
-img{
+.img{
     width: 100px;
     height: 100px;
     background-color: transparent;

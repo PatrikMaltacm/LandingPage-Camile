@@ -1,17 +1,17 @@
 import imgLogo from "../../assets/logo.png"
-import "./header.module.css"
+import styles from "./header.module.css"
 import { Link } from "react-scroll";
 
 
 function Header (){
     return(
-        <header>
-            <img src={imgLogo} alt="" className="img"/>
-            <nav>
-                <Link to="home" smooth={true} duration={500}>HOME</Link>
-                <Link to="about" smooth={true} duration={500}>SOBRE</Link>
-                <Link to="specialties" smooth={true} duration={500}>ESPECIALIDADES</Link>
-                <Link to="time" smooth={true} duration={500}>TIME</Link>
+        <header className={styles.header}>
+            <img src={imgLogo} alt="" className={styles.img}/>
+            <nav className={styles.nav}>
+                <Link to="home" smooth={true} duration={500} className={styles.a}>HOME</Link>
+                <Link to="about" smooth={true} duration={500} className={styles.a}>SOBRE</Link>
+                <Link to="specialties" smooth={true} duration={500} className={styles.a}>ESPECIALIDADES</Link>
+                <Link to="time" smooth={true} duration={500} className={styles.a}>TIME</Link>
             </nav>
         </header>
     )
