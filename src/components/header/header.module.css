@@ -8,6 +8,7 @@
     justify-content: space-between;
     padding: 0 75px;
     position: fixed;
+    z-index: 9999;
 }
 
 
