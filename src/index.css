@@ -26,6 +26,10 @@
             transition: transform 0.3s ease;
 }
 
+.floating img{
+  background-color: transparent;
+}
+
 .floating:hover {
   transform: scale(1.1);
 }
