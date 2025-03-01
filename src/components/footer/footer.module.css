@@ -1,0 +1,28 @@
+footer{
+    height: 82px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    background-color: #57423D;
+
+}
+
+footer p {
+    background-color: transparent;
+}
+
+footer a {
+    margin-left: 10px;
+    background-color: transparent;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+footer a img{
+    width: 30px;
+    height: 30px;
+    background-color: transparent;
+}

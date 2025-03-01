@@ -1,0 +1,42 @@
+header{
+    width: 100%;
+    background-color: #570102;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 0 75px;
+    position: fixed;
+}
+
+
+img{
+    width: 100px;
+    height: 100px;
+    background-color: transparent;
+    
+}
+
+nav{
+    width: 720px;
+    height: 34px;
+    display: flex;
+    justify-content: space-between;
+    background-color: #570102;
+}
+
+nav a {
+    background-color: transparent;
+    text-decoration: none;
+    color: #F9F9F9;
+    width: 94px;
+    height: 24px;
+    font-size: 19px;
+    transform: all 0.5s;
+}
+
+a:hover{
+    cursor: pointer;
+    transform: all 0.5s;
+}
